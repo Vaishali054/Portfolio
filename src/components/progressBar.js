@@ -20,7 +20,7 @@ const ProgressBar = (props) => {
                            <h6  class="progress-value">{value}%</h6>
                     
                    <div className="progressBar">
-                  <div className="progress " data-aos="fade-right" data-aos-duration="700"style={{ width: `${value}%` }}></div>
+                  <div className="progress " data-aos="fade-right" data-aos-duration="1000"style={{ width: `${value}%` }}></div>
                   </div>
     </div>
     </>
