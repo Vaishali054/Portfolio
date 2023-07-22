@@ -4,7 +4,8 @@ import { faEnvelope,
          faHouse,
          faFile,
          faUser,
-         faBlog } from '@fortawesome/free-solid-svg-icons'
+         faBlog,
+        faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
 
 
   export default function Icons() {
@@ -12,6 +13,10 @@ import { faEnvelope,
    
     const handleClickAbout= () => {
       const element =document.getElementById('about')
+      element.scrollIntoView({behavior: 'smooth'});
+    };
+    const handleClickProject= () => {
+      const element =document.getElementById('project')
       element.scrollIntoView({behavior: 'smooth'});
     };
     const handleClickHome= () => {
@@ -36,6 +41,9 @@ import { faEnvelope,
         
           <div className="social-container-icons">
           <FontAwesomeIcon icon={faUser} size="1x" /><p onClick={handleClickAbout} class="icontext">About</p>
+          </div>
+          <div className="social-container-icons">
+          <FontAwesomeIcon icon={faProjectDiagram} size="1x" /><p onClick={handleClickProject} class="icontext">Projects</p>
           </div>
         
           <div className="social-container-icons">

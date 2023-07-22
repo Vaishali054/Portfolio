@@ -552,8 +552,9 @@ p {
  
 }
 
-.text-center {
-  text-align: center!important;
+.resume {
+  padding-left: 255px;
+  text-align: center;
 }
 
 .animated-button1 {

@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ProgressBar from "./progressBar";
 import animatedhomepage from "../image/animated.png";
 import attendance from "../image/atteandance.png";
@@ -16,6 +18,16 @@ export default function Skills() {
   const progressValueREACT = 50;
   const progressValueNodejs = 55;
   const progressValueMongodb = 40;
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  }, []);
+  
 
   return (
     <>
@@ -25,8 +37,8 @@ export default function Skills() {
           <h2>Skills</h2>
         </div>
 
-        <div className="animated fadeInUp">
-          <ProgressBar value={progressValueHTML} skillName={skill1} />
+        <div  data-aos="fade-up">
+          <ProgressBar value={progressValueHTML} skillName={skill1}  />
           <ProgressBar value={progressValueCSS} skillName={skill2} />
           <ProgressBar skillName={skill3} value={progressValueJS}></ProgressBar>
           <ProgressBar value={progressValueREACT} skillName={skill4} />
@@ -35,13 +47,13 @@ export default function Skills() {
         </div>
       </div>
       <hr />
-      <div className="container">
+      <div className="container" id="project">
         <div className="section-title " style={{ paddingBottom: 50 }}>
           <h2>Projects</h2>
         </div>
 
         <div class="projects">
-          <div className="project">
+          <div className="project"data-aos='zoom-in'>
             <img src={animatedhomepage} className="project-img" />
             <h2 className="project-name">Animated homepage</h2>
             <p className="project-details">
@@ -55,7 +67,7 @@ export default function Skills() {
               </a>
             </div>
           </div>
-          <div className="project">
+          <div className="project" data-aos='zoom-in' data-aos-delay="500">
             <img src={recruitment} className="project-img" />
             <h2 className="project-name">Recruitment Solution</h2>
             <p className="project-details">
@@ -65,13 +77,13 @@ export default function Skills() {
               implemented features.
             </p>
 
-            <div className="button">
+            <div className="button" >
               <a className="link"href="https://recruitment-solution-frontend.vercel.app/" target="_blank">
                 View Project
               </a>
             </div>
           </div>
-          <div className="project">
+          <div className="project" data-aos='zoom-in' data-aos-delay="1000">
             <img src={attendance} className="project-img" />
             <h2 className="project-name">Attendance tracker</h2>
             <p className="project-details">
@@ -88,11 +100,11 @@ export default function Skills() {
         </div>
       </div>
       <hr />
-      <div className="container">
-        <div id="resume" className="section-title">
+      <div className="container" id="resume">
+        <div  className="section-title">
           <h2>Resume</h2>
         </div>
-        <div className="text-center">
+        <div className="resume" >
           <a
             href="https://flowcv.com/resume/k8er42o65s"
             target="_blank"
