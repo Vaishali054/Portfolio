@@ -4,7 +4,7 @@ import Skills from './skills'
 // import { Dimensions } from 'react-native'
 
 export default function About() {
-    const about=`Welcome to my profile! I'm Vaishali Thakur, a dedicated and passionate student currently pursuing a dual degree in Computer Science and Engineering at NIT Hamirpur. I am currently in my second year of study, and I am proud to maintain a CGPA of 9.07.
+    const about=`Welcome to my profile! I'm Vaishali Thakur, a dedicated and passionate student currently pursuing a dual degree in Computer Science and Engineering at NIT Hamirpur. I am currently in my third year of study, and I am proud to maintain a CGPA of 9.25.
 
     With a focus on front-end development. On the technical side, my proficiency in ReactJS allows me to create visually appealing and user-friendly interfaces that leave a lasting impact. I am committed to staying up-to-date with the latest industry trends and best practices, continuously expanding my skill set to deliver cutting-edge solutions.
     

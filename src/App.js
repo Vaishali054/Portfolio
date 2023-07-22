@@ -16,7 +16,7 @@ import About from './components/About.js'
 function App() {
   return (
     <div className="root">
-      <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0" className="mobile-nav-active">
+      <body className="mobile-nav-active">
        
 
         
